@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E733A091-882C-493A-AFBE-AD5AB25E5AA5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI_Proyecto_Final_V2</RootNamespace>
+    <AssemblyName>GUI_Proyecto_Final_V2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalzadoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalzadoForm.Designer.cs">
+      <DependentUpon>CalzadoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarritoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarritoForm.Designer.cs">
+      <DependentUpon>CarritoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassArticulo.cs" />
+    <Compile Include="ClassBateria.cs" />
+    <Compile Include="ClassCalzadoHombre.cs" />
+    <Compile Include="ClassCalzadoMujer.cs" />
+    <Compile Include="ClassCargador.cs" />
+    <Compile Include="ClassCelular.cs" />
+    <Compile Include="ClassCliente.cs" />
+    <Compile Include="ClassConsola.cs" />
+    <Compile Include="ClassElectronicos.cs" />
+    <Compile Include="ClassLaptop.cs" />
+    <Compile Include="ClassPedido.cs" />
+    <Compile Include="ClassRopa.cs" />
+    <Compile Include="ClassRopaYCalzado.cs" />
+    <Compile Include="ClassSIM.cs" />
+    <Compile Include="DetallesArticulosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesArticulosForm.Designer.cs">
+      <DependentUpon>DetallesArticulosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElectronicosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElectronicosForm.Designer.cs">
+      <DependentUpon>ElectronicosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImagenInicioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImagenInicioForm.Designer.cs">
+      <DependentUpon>ImagenInicioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSecionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSecionForm.Designer.cs">
+      <DependentUpon>InicioSecionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipalForm.Designer.cs">
+      <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoUsuarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoUsuarioForm.Designer.cs">
+      <DependentUpon>NuevoUsuarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RopaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RopaForm.Designer.cs">
+      <DependentUpon>RopaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioDetallesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioDetallesForm.Designer.cs">
+      <DependentUpon>UsuarioDetallesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioForm.Designer.cs">
+      <DependentUpon>UsuarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CalzadoForm.resx">
+      <DependentUpon>CalzadoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarritoForm.resx">
+      <DependentUpon>CarritoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesArticulosForm.resx">
+      <DependentUpon>DetallesArticulosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElectronicosForm.resx">
+      <DependentUpon>ElectronicosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImagenInicioForm.resx">
+      <DependentUpon>ImagenInicioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSecionForm.resx">
+      <DependentUpon>InicioSecionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipalForm.resx">
+      <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoUsuarioForm.resx">
+      <DependentUpon>NuevoUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RopaForm.resx">
+      <DependentUpon>RopaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioDetallesForm.resx">
+      <DependentUpon>UsuarioDetallesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioForm.resx">
+      <DependentUpon>UsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\restaurar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\maximizar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\camiseta-casual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\high-heels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\sensible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Consola_N64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Lenovo_V15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\_iphone_11_pro_max.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Galaxy_Chromebook.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Nike_air_zoom_pegasus_39.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Bruno_Marc_Mocasines.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Tenis_de_lona_para_mujer_con_cordones_estilo_clásico_vintage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Zapatos_de_Tacón_Michelle_para_mujer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Cargo_Pants.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Jeans_elasticos_ajustados.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Pantalón de pierna recta elástica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Ninedaily_Busa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PantallaInicio.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
